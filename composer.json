@@ -1,0 +1,18 @@
+{
+    "require": {
+        "pepipost/pepipost-sdk-php": "^5.0",
+        "lindelius/php-jwt": "^0.9",        
+        "sendgrid/sendgrid": "^7.9",
+        "aws/aws-sdk-php": "^3.164",
+        "guzzlehttp/promises": "^1.4",
+        "vlucas/phpdotenv": "^5.2",
+        "phpoffice/phpspreadsheet": "^1.18",
+        "myclabs/php-enum": "1.7.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "SPMailer\\": "Libraries/SPMailer/",
+            "Microsite\\": "Class/"
+        }
+    }
+}

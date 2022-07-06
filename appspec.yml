@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/centos/temp/
+hooks:
+  BeforeInstall:
+    - location: beforedeploy.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: afterdeploy.sh
+      timeout: 600
+      runas: root
